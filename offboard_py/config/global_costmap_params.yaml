@@ -1,7 +1,6 @@
 global_costmap:
   plugins:
     - {name: static_map,       type: "costmap_2d::StaticLayer"}
-    #- {name: pointcloud_layer_temp, type: "spatio_temporal_voxel_layer/SpatioTemporalVoxelLayer"} #Pointcloud layer working
     - {name: pointcloud_layer, type: "costmap_2d::VoxelLayer"}
     - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
 
@@ -11,4 +10,3 @@ global_costmap:
   publish_frequency: 10.0
   resolution: 0.02
   transform_tolerance: 0.5
-  #static_map: true
